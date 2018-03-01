@@ -15,7 +15,7 @@
     if (self) {
         self.headerReferenceSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 45);//头部视图的框架大小
         self.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width/7, [UIScreen mainScreen].bounds.size.width/7);//每个cell的大小
-        self.sectionInset = UIEdgeInsetsMake([UIScreen mainScreen].bounds.size.width/14, 0, [UIScreen mainScreen].bounds.size.width/14, 0);//网格视图的/上/左/下/右,的边距
+        self.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);//网格视图的/上/左/下/右,的边距
         self.minimumLineSpacing = [UIScreen mainScreen].bounds.size.width/14;//每列的最小间距
         self.minimumInteritemSpacing = 0;//每行的最小间距
         
@@ -84,6 +84,8 @@
     }
     return [superArray copy];;
 }
+
+#pragma mark -仿tableview 分组
 - (BOOL) shouldInvalidateLayoutForBoundsChange:(CGRect)newBound {
     return NO;
 }
