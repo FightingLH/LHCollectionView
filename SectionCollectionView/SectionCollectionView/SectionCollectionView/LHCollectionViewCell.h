@@ -2,7 +2,7 @@
 //  LHCollectionViewCell.h
 //  SectionCollectionView
 //
-//  Created by feeyo on 2018/3/1.
+//  Created by  on 2018/3/1.
 //  Copyright © 2018年 lihuan. All rights reserved.
 //
 
